@@ -1,14 +1,16 @@
+//êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
+
 #include <stdio.h>
 
 int main(void)
 {
 	int ch;
-	while (1) // break ³ª¿Ã¶§±îÁö ¹İº¹
+	while (1) // break ë‚˜ì˜¬ë•Œê¹Œì§€ ë°˜ë³µ
 	{
-		ch = getchar(); // stdinÀ¸·ÎºÎÅÍ ¹®ÀÚ ÇÏ³ª ÀÔ·Â 
+		ch = getchar(); // stdinìœ¼ë¡œë¶€í„° ë¬¸ì í•˜ë‚˜ ì…ë ¥ 
 		if (ch == EOF) 
-			break; // ¹İº¹ Å»Ãâ
-		putchar(ch); // ch¿¡ ÀúÀåµÈ ¹®ÀÚ stdout¿¡ Ãâ·Â
+			break; // ë°˜ë³µ íƒˆì¶œ
+		putchar(ch); // chì— ì €ì¥ëœ ë¬¸ì stdoutì— ì¶œë ¥
 	}
 	return 0;
 }
