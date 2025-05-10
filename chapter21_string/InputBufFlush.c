@@ -1,8 +1,9 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 void ClearLineFromReadBuffer(void)
 {
-	while (getchar() != '\n'); // ÀÔ·Â ¹öÆÛ¿¡¼­ °³Çà ¹®ÀÚ°¡ ³ª¿Ã ¶§±îÁö ¹®ÀÚ¸¦ ÀĞ¾î ¹öÆÛ¸¦ ºñ¿ò
+	while (getchar() != '\n'); // ì…ë ¥ ë²„í¼ì—ì„œ ê°œí–‰ ë¬¸ìê°€ ë‚˜ì˜¬ ë•Œê¹Œì§€ ë¬¸ìë¥¼ ì½ì–´ ë²„í¼ë¥¼ ë¹„ì›€
 }
 
 
@@ -11,13 +12,13 @@ int main(void)
 {
 	char perID[7];
 	char name[10];
-	fputs("ÁÖ¹Î ¹øÈ£ ¾Õ 6ÀÚ¸® ÀÔ·Â: ", stdout);
+	fputs("ì£¼ë¯¼ ë²ˆí˜¸ ì• 6ìë¦¬ ì…ë ¥: ", stdout);
 	fgets(perID, sizeof(perID), stdin);
 	ClearLineFromReadBuffer();
 
-	fputs("ÀÌ¸§ ÀÔ·Â: ", stdout);
+	fputs("ì´ë¦„ ì…ë ¥: ", stdout);
 	fgets(name, sizeof(name), stdin);
-	printf("ÁÖ¹Î¹øÈ£ : %s\n", perID);
-	printf("ÀÌ¸§ : %s\n", name);
+	printf("ì£¼ë¯¼ë²ˆí˜¸ : %s\n", perID);
+	printf("ì´ë¦„ : %s\n", name);
 	return 0;
 }
