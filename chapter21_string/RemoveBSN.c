@@ -1,20 +1,21 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 #include <string.h>
 
 void RemoveBSN(char str[])
 {
 	int len = strlen(str);
-	str[len - 1] = 0; // ³Î¹®ÀÚ ¾Õ¿¡ ÀúÀåµÈ °³Çà¹®ÀÚ¸¦ Á¦°Å
+	str[len - 1] = 0; // ë„ë¬¸ì ì•ì— ì €ì¥ëœ ê°œí–‰ë¬¸ìë¥¼ ì œê±°
 }
 
 int main(void)
 {
 	char str[100];
-	printf("¹®ÀÚ¿­ ÀÔ·Â: ");
+	printf("ë¬¸ìì—´ ì…ë ¥: ");
 	fgets(str, sizeof(str), stdin);
-	printf("±æÀÌ: %d ³»¿ë: %s \n", strlen(str), str);
+	printf("ê¸¸ì´: %d ë‚´ìš©: %s \n", strlen(str), str);
 
 	RemoveBSN(str);
-	printf("±æÀÌ %d ³»¿ë %s \n", strlen(str), str);
+	printf("ê¸¸ì´ %d ë‚´ìš© %s \n", strlen(str), str);
 	return 0;
 }
