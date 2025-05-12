@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,12 +6,12 @@
 int main(void)
 {
 	char str[20];
-	printf("Á¤¼ö ÀÔ·Â: ");
+	printf("ì •ìˆ˜ ì…ë ¥: ");
 	scanf("%s", str);
-	printf("%d \n", atoi(str)); // ¹®ÀÚ¿­À» Á¤¼öÇüÀ¸·Î º¯È¯
+	printf("%d \n", atoi(str)); // ë¬¸ìì—´ì„ ì •ìˆ˜í˜•ìœ¼ë¡œ ë³€í™˜
 
-	printf("½Ç¼ö ÀÔ·Â: ");
+	printf("ì‹¤ìˆ˜ ì…ë ¥: ");
 	scanf("%s", str);
-	printf("%g \n", atof(str)); // ¹®ÀÚ¿­À» ½Ç¼öÇüÀ¸·Î º¯È¯
+	printf("%g \n", atof(str)); // ë¬¸ìì—´ì„ ì‹¤ìˆ˜í˜•ìœ¼ë¡œ ë³€í™˜
 	return 0;
 }
