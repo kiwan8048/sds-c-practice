@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
@@ -12,7 +13,7 @@ int main(void)
 	strcat(str1, str2);
 	puts(str1);
 	/*case2*/
-	strncat(str3, str4, 7); // 7°³¸¦ ÀÌ¾îºÙÀÌ°í ³Î¹®ÀÚ »ğÀÔ
+	strncat(str3, str4, 7); // 7ê°œë¥¼ ì´ì–´ë¶™ì´ê³  ë„ë¬¸ì ì‚½ì…
 	puts(str3);
 	return 0;
 }
