@@ -1,3 +1,4 @@
+// 이 코드는 교재의 내용을 참고하였습니다
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
