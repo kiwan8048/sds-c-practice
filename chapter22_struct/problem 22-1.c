@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-struct employee // ±¸Á¶Ã¼ Á¤ÀÇ
+struct employee // êµ¬ì¡°ì²´ ì •ì˜
 {
 	char name[20];
 	char ID[20];
@@ -12,11 +12,11 @@ struct employee // ±¸Á¶Ã¼ Á¤ÀÇ
 int main(void)
 {
 	struct employee me;
-	puts("ÀÌ¸§ ÀÔ·Â "); scanf("%s", me.name); // ÀÔ·Â
-	puts("ÁÖ¹Îµî·Ï¹øÈ£ ÀÔ·Â "); scanf("%s", me.ID);
-	puts("±Ş¿© ÀÔ·Â "); scanf("%d", &me.salary);
-	printf("ÀÌ¸§: %s \n", me.name); // Ãâ·Â
-	printf("ÁÖ¹Îµî·Ï¹øÈ£: %s \n", me.ID);
-	printf("±Ş¿©: %d \n", me.salary);
+	puts("ì´ë¦„ ì…ë ¥ "); scanf("%s", me.name); // ì…ë ¥
+	puts("ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ ì…ë ¥ "); scanf("%s", me.ID);
+	puts("ê¸‰ì—¬ ì…ë ¥ "); scanf("%d", &me.salary);
+	printf("ì´ë¦„: %s \n", me.name); // ì¶œë ¥
+	printf("ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸: %s \n", me.ID);
+	printf("ê¸‰ì—¬: %d \n", me.salary);
 	return 0;
 }
