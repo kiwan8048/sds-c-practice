@@ -1,10 +1,11 @@
+// ì´ ì½”ë“œëŠ” êµìž¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì—¬ ìž‘ì„±í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 struct point
 {
 	int xpos;
 	int ypos;
-	struct point* ptr; // ±¸Á¶Ã¼ ³»ºÎÀÇ Æ÷ÀÎÅÍ
+	struct point* ptr; // êµ¬ì¡°ì²´ ë‚´ë¶€ì˜ í¬ì¸í„°
 };
 
 int main(void)
@@ -15,9 +16,9 @@ int main(void)
 	pos1.ptr = &pos2;
 	pos2.ptr = &pos3;
 	pos3.ptr = &pos1;
-	printf("Á¡ÀÇ ¿¬°á °ü°è... \n");
-	printf("[%d, %d]¿Í [%d, %d] ¿¬°á \n", pos1.xpos, pos1.ypos, pos1.ptr->xpos, pos1.ptr->ypos);
-	printf("[%d, %d]¿Í [%d, %d] ¿¬°á \n", pos2.xpos, pos2.ypos, pos2.ptr->xpos, pos2.ptr->ypos);
-	printf("[%d, %d]¿Í [%d, %d] ¿¬°á \n", pos3.xpos, pos3.ypos, pos3.ptr->xpos, pos3.ptr->ypos);
+	printf("ì ì˜ ì—°ê²° ê´€ê³„... \n");
+	printf("[%d, %d]ì™€ [%d, %d] ì—°ê²° \n", pos1.xpos, pos1.ypos, pos1.ptr->xpos, pos1.ptr->ypos);
+	printf("[%d, %d]ì™€ [%d, %d] ì—°ê²° \n", pos2.xpos, pos2.ypos, pos2.ptr->xpos, pos2.ptr->ypos);
+	printf("[%d, %d]ì™€ [%d, %d] ì—°ê²° \n", pos3.xpos, pos3.ypos, pos3.ptr->xpos, pos3.ptr->ypos);
 	return 0;
 }
