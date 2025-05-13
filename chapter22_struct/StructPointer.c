@@ -1,3 +1,4 @@
+// 이 코드는 교재의 내용을 참고하여 작성하였습니다
 #include <stdio.h>
 
 struct point
