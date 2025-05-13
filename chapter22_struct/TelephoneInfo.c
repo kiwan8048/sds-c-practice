@@ -1,8 +1,9 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì—¬ ì‘ì„±í•˜ì˜€ìŠµë‹ˆë‹¤
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 
-struct person // ±¸Á¶Ã¼ ¼±¾ğ
+struct person // êµ¬ì¡°ì²´ ì„ ì–¸
 {
 	char name[20];
 	char phoneNum[20];
@@ -12,20 +13,20 @@ struct person // ±¸Á¶Ã¼ ¼±¾ğ
 int main(void)
 {
 	struct person man1, man2;
-	strcpy(man1.name, "¾È¼ºÁØ"); // ¹è¿­¿¡ ¹®ÀÚ¿­À» ³Ö±â À§ÇØ¼­ strcpy »ç¿ë
+	strcpy(man1.name, "ì•ˆì„±ì¤€"); // ë°°ì—´ì— ë¬¸ìì—´ì„ ë„£ê¸° ìœ„í•´ì„œ strcpy ì‚¬ìš©
 	strcpy(man1.phoneNum, "010-1122-3344");
 	man1.age = 23;
 
-	printf("ÀÌ¸§ ÀÔ·Â: "); scanf("%s", &man2.name);
-	printf("¹øÈ£ ÀÔ·Â: "); scanf("%s", &man2.phoneNum);
-	printf("³ªÀÌ ÀÔ·Â: "); scanf("%d", &man2.age);
+	printf("ì´ë¦„ ì…ë ¥: "); scanf("%s", &man2.name);
+	printf("ë²ˆí˜¸ ì…ë ¥: "); scanf("%s", &man2.phoneNum);
+	printf("ë‚˜ì´ ì…ë ¥: "); scanf("%d", &man2.age);
 
-	printf("ÀÌ¸§: %s \n", man1.name); 
-	printf("¹øÈ£: %s \n" , man1.phoneNum); 
-	printf("³ªÀÌ: %d \n", man1.age); 
+	printf("ì´ë¦„: %s \n", man1.name); 
+	printf("ë²ˆí˜¸: %s \n" , man1.phoneNum); 
+	printf("ë‚˜ì´: %d \n", man1.age); 
 
-	printf("ÀÌ¸§: %s \n", man2.name); 
-	printf("¹øÈ£: %s \n", man2.phoneNum);
-	printf("³ªÀÌ: %d \n", man2.age); 
+	printf("ì´ë¦„: %s \n", man2.name); 
+	printf("ë²ˆí˜¸: %s \n", man2.phoneNum);
+	printf("ë‚˜ì´: %d \n", man2.age); 
 	return 0;
 }
