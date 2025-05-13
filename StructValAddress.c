@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì—¬ ì‘ì„±í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 struct point
@@ -16,8 +17,8 @@ struct person
 int main(void)
 {
 	struct point pos = { 10,20 };
-	struct person man = { "ÀÌ½Â±â", "010-1212-0001", 21 };
-	printf("%p %p \n", &pos, &pos.xpos); // ±¸Á¶Ã¼ º¯¼öÀÇ ÁÖ¼Ò°ª°ú ±¸Á¶Ã¼ º¯¼öÀÇ Ã¹¹øÂ° º¯¼ö¿ÍÀÇ ÁÖ¼Ò ºñ±³
+	struct person man = { "ì´ìŠ¹ê¸°", "010-1212-0001", 21 };
+	printf("%p %p \n", &pos, &pos.xpos); // êµ¬ì¡°ì²´ ë³€ìˆ˜ì˜ ì£¼ì†Œê°’ê³¼ êµ¬ì¡°ì²´ ë³€ìˆ˜ì˜ ì²«ë²ˆì§¸ ë³€ìˆ˜ì™€ì˜ ì£¼ì†Œ ë¹„êµ
 	printf("%p %p \n", &man, man.name);
 	return 0;
 }
