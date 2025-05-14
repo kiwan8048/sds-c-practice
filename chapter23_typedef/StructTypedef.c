@@ -9,7 +9,7 @@ struct point
 
 typedef struct point Point; // typedef 선언
 
-typedef struct point
+typedef struct person
 {
 	char name[20];
 	char phoneNum[20];
