@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 typedef struct point
@@ -8,7 +9,7 @@ typedef struct point
 
 void OrgSymTrans(Point* ptr)
 {
-	ptr->xpos = (ptr->xpos) * -1; // ºÎÈ£ µÚÁı±â
+	ptr->xpos = (ptr->xpos) * -1; // ë¶€í˜¸ ë’¤ì§‘ê¸°
 	ptr->ypos = (ptr->ypos) * -1;
 }
 
@@ -20,9 +21,9 @@ void ShowPosition(Point pos)
 int main(void)
 {
 	Point pos = { 7,-5 };
-	OrgSymTrans(&pos); // ¿øÁ¡ ´ëÄª
+	OrgSymTrans(&pos); // ì›ì  ëŒ€ì¹­
 	ShowPosition(pos);
-	OrgSymTrans(&pos); // ¿ø»ó º¹±Í
+	OrgSymTrans(&pos); // ì›ìƒ ë³µê·€
 	ShowPosition(pos);
 	return 9;
 }
