@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 typedef struct point
@@ -6,13 +7,13 @@ typedef struct point
 	int ypos;
 } Point;
 
-Point AddPoint(Point pos1, Point pos2) // µ¡¼À ÇÔ¼ö¸¦ Á÷Á¢ ±¸Çö
+Point AddPoint(Point pos1, Point pos2) // ë§ì…ˆ í•¨ìˆ˜ë¥¼ ì§ì ‘ êµ¬í˜„
 {
 	Point pos = { pos1.xpos + pos2.xpos, pos1.ypos + pos2.ypos };
 	return pos;
 }
 
-Point MinPoint(Point pos1, Point pos2) // »¬¼À ÇÔ¼ö¸¦ Á÷Á¢ ±¸Çö
+Point MinPoint(Point pos1, Point pos2) // ëº„ì…ˆ í•¨ìˆ˜ë¥¼ ì§ì ‘ êµ¬í˜„
 {
 	Point pos = { pos1.xpos - pos2.xpos, pos1.ypos - pos2.ypos };
 	return pos;
