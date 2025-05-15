@@ -1,3 +1,4 @@
+// Л²╢ Л╫■К⌠°К┼■ Й╣░Л·╛Л²≤ К┌╢Л ╘Л²└ Л╟╦ЙЁ═М∙≤Л≤─Л┼╣К▀┬К▀╓
 #include <stdio.h>
 
 typedef struct point
@@ -6,7 +7,7 @@ typedef struct point
 	int ypos;
 } Point;
 
-void SwapPoint(Point* pos1, Point* pos2) // ╣н ╠╦а╤ц╪юг ╟╙ю╩ ╫╨©рго╢б гт╪Ж
+void SwapPoint(Point* pos1, Point* pos2) // К▒░ Й╣╛Л║╟Л╡╢Л²≤ Й╟▓Л²└ Л┼╓Л≥▒М∙≤К┼■ М∙╗Л┬≤
 {
 	int save1= pos1->xpos;
 	int save2 = pos1->ypos;
