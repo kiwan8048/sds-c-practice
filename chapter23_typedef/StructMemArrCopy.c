@@ -1,9 +1,10 @@
+// 이 코드는 교재의 내용을 참고하였습니다
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 typedef struct person
 {
-	char name[20]; // �迭�� ���޵�
+	char name[20]; // ¹è¿­µµ Àü´ÞµÊ
 	char phoneNum[20];
 	int age;
 } Person;
@@ -16,7 +17,7 @@ void ShowPersonInfo(Person man)
 }
 
 
-Person ReadPersonInfo(void) // ��ȯ�� Person��
+Person ReadPersonInfo(void) // ¹ÝÈ¯ÀÌ PersonÇü
 {
 	Person man;
 	printf("name? "); scanf("%s", man.name);
