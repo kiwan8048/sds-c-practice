@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 typedef struct point
@@ -6,7 +7,7 @@ typedef struct point
 	int ypos;
 } Point; // typedef
 
-void ShowPosition(Point pos) // ±¸Á¶Ã¼ º¯¼ö¸¦ Àü´Ş¹ŞÀ½ 
+void ShowPosition(Point pos) // êµ¬ì¡°ì²´ ë³€ìˆ˜ë¥¼ ì „ë‹¬ë°›ìŒ 
 {
 	printf("[%d, %d] \n", pos.xpos, pos.ypos);
 }
@@ -16,7 +17,7 @@ Point GetCurrentPosition(void)
 	Point cen;
 	printf("Input current pos: ");
 	scanf_s("%d %d", &cen.xpos, &cen.ypos);
-	return cen; // ±¸Á¶Ã¼ º¯¼ö¸¦ ¹İÈ¯
+	return cen; // êµ¬ì¡°ì²´ ë³€ìˆ˜ë¥¼ ë°˜í™˜
 }
 
 int main(void)
