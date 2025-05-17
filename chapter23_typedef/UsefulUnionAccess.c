@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
@@ -19,11 +20,11 @@ typedef union rdbuf
 int main(void)
 {
 	RDBuf buf;
-	printf("Á¤¼ö ÀÔ·Â: ");
+	printf("ì •ìˆ˜ ì…ë ¥: ");
 	scanf("%d", &(buf.iBuf));
-	printf("»óÀ§ 2¹ÙÀÌÆ®: %u \n", buf.sBuf.upper);
-	printf("ÇÏÀ§ 2¹ÙÀÌÆ®: %u \n", buf.sBuf.lower);
-	printf("»óÀ§ 1¹ÙÀÌÆ® ¾Æ½ºÅ° ÄÚµå: %c \n", buf.bBuf[0]);
-	printf("ÇÏÀ§ 1¹ÙÀÌÆ® ¾Æ½ºÅ° ÄÚµå: %c \n", buf.bBuf[3]);
+	printf("ìƒìœ„ 2ë°”ì´íŠ¸: %u \n", buf.sBuf.upper);
+	printf("í•˜ìœ„ 2ë°”ì´íŠ¸: %u \n", buf.sBuf.lower);
+	printf("ìƒìœ„ 1ë°”ì´íŠ¸ ì•„ìŠ¤í‚¤ ì½”ë“œ: %c \n", buf.bBuf[0]);
+	printf("í•˜ìœ„ 1ë°”ì´íŠ¸ ì•„ìŠ¤í‚¤ ì½”ë“œ: %c \n", buf.bBuf[3]);
 	return 0;
 }
