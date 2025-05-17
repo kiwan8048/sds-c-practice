@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 typedef union ubox
@@ -9,12 +10,12 @@ typedef union ubox
 
 int main(void)
 {
-	UBox ubx; // 8¹ÙÀÌÆ® ÇÒ´ç
+	UBox ubx; // 8ë°”ì´íŠ¸ í• ë‹¹
 	ubx.mem1 = 20;
-	printf("%d \n", ubx.mem2); // ÀÚ·áÇüÀÌ °°±â¿¡ °°Àº °á°ú
-	ubx.mem3 = 7.15; // 8¹ÙÀÌÆ®¿¡ °ÉÃÄ ÀúÀå
-	printf("%d \n", ubx.mem1); // 4¹ÙÀÌÆ®¸¸ ÀĞ±â¿¡ ÀÌ»óÇÑ °ª Ãâ·Â
+	printf("%d \n", ubx.mem2); // ìë£Œí˜•ì´ ê°™ê¸°ì— ê°™ì€ ê²°ê³¼
+	ubx.mem3 = 7.15; // 8ë°”ì´íŠ¸ì— ê±¸ì³ ì €ì¥
+	printf("%d \n", ubx.mem1); // 4ë°”ì´íŠ¸ë§Œ ì½ê¸°ì— ì´ìƒí•œ ê°’ ì¶œë ¥
 	printf("%d \n", ubx.mem2);
-	printf("%g \n", ubx.mem3); // 8¹ÙÀÌÆ® Ãâ·Â
+	printf("%g \n", ubx.mem3); // 8ë°”ì´íŠ¸ ì¶œë ¥
 	return 0;
 }
