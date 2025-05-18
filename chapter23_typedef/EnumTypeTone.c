@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 typedef enum syllable
@@ -10,19 +11,19 @@ void Sound(Syllable sy)
 	switch (sy)
 	{
 	case Do:
-		printf("µµ´Â ÇÏ¾á µµ¶óÁö \n"); return 0;
+		printf("ë„ëŠ” í•˜ì–€ ë„ë¼ì§€ \n"); return 0;
 	case Re:
-		printf("·¹´Â µÕ±Ù ·¹ÄÚµå \n"); return 0;
+		printf("ë ˆëŠ” ë‘¥ê·¼ ë ˆì½”ë“œ \n"); return 0;
 	case Mi:
-		printf("¹Ì´Â ÆÄ¶õ ¹Ì³ª¸® \n"); return 0;
+		printf("ë¯¸ëŠ” íŒŒë€ ë¯¸ë‚˜ë¦¬ \n"); return 0;
 	case Fa:
-		printf("ÆÄ´Â ¿¹»Û ÆÄ¶û»õ \n"); return 0;
+		printf("íŒŒëŠ” ì˜ˆìœ íŒŒë‘ìƒˆ \n"); return 0;
 	case Sol:
-		printf("¼ÖÀº ÀÛÀº ¼Ö¹æ¿ï \n"); return 0;
+		printf("ì†”ì€ ì‘ì€ ì†”ë°©ìš¸ \n"); return 0;
 	case La:
-		printf("¶ó´Â ¶óµğ¿À°í¿ä \n"); return 0;
+		printf("ë¼ëŠ” ë¼ë””ì˜¤ê³ ìš” \n"); return 0;
 	case Si:
-		printf("½Ã´Â Á¹Á¹ ½Ã³Á¹° \n"); return 0;
+		printf("ì‹œëŠ” ì¡¸ì¡¸ ì‹œëƒ‡ë¬¼ \n"); return 0;
 	}
 
 }
@@ -30,7 +31,7 @@ void Sound(Syllable sy)
 int main(void)
 {
 	Syllable tone;
-	for (tone = Do; tone <= Si; tone++) // ¿­°ÅÇü ³»ºÎÀÇ ½Äº°ÀÚ¿¡ ¼ıÀÚ¸¦ ºÎ¿©
+	for (tone = Do; tone <= Si; tone++) // ì—´ê±°í˜• ë‚´ë¶€ì˜ ì‹ë³„ìì— ìˆ«ìë¥¼ ë¶€ì—¬
 	{
 		Sound(tone);
 	}
