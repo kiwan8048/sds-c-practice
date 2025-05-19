@@ -1,19 +1,20 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 int main(void)
 {
 	int ch, i;
-	FILE* fp = fopen("data.txt", "rt"); // data.txt¿¡ ´ëÇÑ Á¤º¸¸¦ ´ãÀº ÆÄÀÏ ±¸Á¶Ã¼ »ı¼º ÈÄ fp¿¡ ±¸Á¶Ã¼ ÁÖ¼Ò ÀúÀå
+	FILE* fp = fopen("data.txt", "rt"); // data.txtì— ëŒ€í•œ ì •ë³´ë¥¼ ë‹´ì€ íŒŒì¼ êµ¬ì¡°ì²´ ìƒì„± í›„ fpì— êµ¬ì¡°ì²´ ì£¼ì†Œ ì €ì¥
 	if (fp == NULL)
 	{
-		puts("ÆÄÀÏ¿ÀÇÂ ½ÇÆĞ!");
-		return -1; // ºñÁ¤»óÀû Á¾·á
+		puts("íŒŒì¼ì˜¤í”ˆ ì‹¤íŒ¨!");
+		return -1; // ë¹„ì •ìƒì  ì¢…ë£Œ
 	}
 	for (i = 0; i < 3; i++)
 	{
 		ch = fgetc(fp);
 		printf("%c \n", ch);
 	}
-	fclose(fp); // ½ºÆ®¸² ´İ±â
+	fclose(fp); // ìŠ¤íŠ¸ë¦¼ ë‹«ê¸°
 	return 0;
 }
