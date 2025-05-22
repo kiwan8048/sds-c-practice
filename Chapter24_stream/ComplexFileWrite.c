@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)
@@ -10,9 +11,9 @@ int main(void)
 	int i;
 	for (i = 0; i < 3; i++)
 	{
-		printf("ÀÌ¸§ ¼ºº° ³ªÀÌ ¼ø ÀÔ·Â: ");
+		printf("ì´ë¦„ ì„±ë³„ ë‚˜ì´ ìˆœ ìž…ë ¥: ");
 		scanf("%s %c %d", name, &sex, &age);
-		getchar(); // °³Çà¹®ÀÚ Á¦°Å
+		getchar(); // ê°œí–‰ë¬¸ìž ì œê±°
 		fprintf(fp, "%s %c %d", name, sex, age);
 	}
 	fclose(fp);
