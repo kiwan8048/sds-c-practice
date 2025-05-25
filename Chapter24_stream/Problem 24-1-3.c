@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 int main(void)
@@ -6,7 +7,7 @@ int main(void)
 	FILE* story = fopen("mystory.txt", "rt");
 	if (story == NULL)
 	{
-		printf("ÆÄÀÏ¿ÀÇÂ ½ÇÆĞ!");
+		printf("íŒŒì¼ì˜¤í”ˆ ì‹¤íŒ¨!");
 		return -1;
 	}
 	while (fgets(str, sizeof(str), story) != NULL)
@@ -15,11 +16,11 @@ int main(void)
 	}
 	if (feof(story) != NULL)
 	{
-		printf("\nÆÄÀÏÃâ·Â ¼º°ø!");
+		printf("\níŒŒì¼ì¶œë ¥ ì„±ê³µ!");
 	}
 	else
 	{
-		printf("ÆÄÀÏÃâ·Â ½ÇÆĞ!");
+		printf("íŒŒì¼ì¶œë ¥ ì‹¤íŒ¨!");
 	}
 	fclose(story);
 	return 0;
