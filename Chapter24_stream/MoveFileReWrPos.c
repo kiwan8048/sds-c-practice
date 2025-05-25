@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
@@ -9,10 +10,10 @@ int main(void)
 
 	fp = fopen("text.txt", "rt");
 
-	fseek(fp, -2, SEEK_END); // EOF·ÎºÎÅÍ 2Ä­ ¿ŞÂÊÀ¸·Î ÆÄÀÏÁö½ÃÀÚ ÀÌµ¿
+	fseek(fp, -2, SEEK_END); // EOFë¡œë¶€í„° 2ì¹¸ ì™¼ìª½ìœ¼ë¡œ íŒŒì¼ì§€ì‹œì ì´ë™
 	putchar(fgetc(fp));
 	fseek(fp, 2, SEEK_SET);
-	putchar(fgetc(fp)); // 3 Ãâ·Â ÈÄ ÆÄÀÏÁö½ÃÀÚ 1Ä­ ÀÌµ¿
+	putchar(fgetc(fp)); // 3 ì¶œë ¥ í›„ íŒŒì¼ì§€ì‹œì 1ì¹¸ ì´ë™
 	fseek(fp, 2, SEEK_CUR);
 	putchar(fgetc(fp));
 	fclose(fp);
