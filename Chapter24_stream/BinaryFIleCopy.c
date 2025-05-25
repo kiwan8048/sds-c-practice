@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 int main(void)
@@ -8,7 +9,7 @@ int main(void)
 	int readCnt;
 	if (src == NULL || des == NULL)
 	{
-		puts("ÆÄÀÏ¿ÀÇÂ ½ÇÆĞ!");
+		puts("íŒŒì¼ì˜¤í”ˆ ì‹¤íŒ¨!");
 		return -1;
 	}
 	while (1)
@@ -22,7 +23,7 @@ int main(void)
 				break;
 			}
 			else
-				puts("ÆÄÀÏº¹»ç ½ÇÆĞ!");
+				puts("íŒŒì¼ë³µì‚¬ ì‹¤íŒ¨!");
 			break;
 		}
 		fwrite(buf, 1, sizeof(buf), des);
