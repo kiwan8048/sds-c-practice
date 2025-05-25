@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
@@ -9,25 +10,25 @@ int main(void)
 	char food[20];
 	char hobby[20];
 	FILE* story = fopen("mystory.txt", "wt");
-	printf("ÀÌ¸§ ÀÔ·Â: ");
+	printf("ì´ë¦„ ì…ë ¥: ");
 	scanf("%s", name);
-	printf("ÁÖ¹Î¹øÈ£ ÀÔ·Â: ");
+	printf("ì£¼ë¯¼ë²ˆí˜¸ ì…ë ¥: ");
 	scanf("%s", id);
-	printf("ÀüÈ­¹øÈ£ ÀÔ·Â: ");
+	printf("ì „í™”ë²ˆí˜¸ ì…ë ¥: ");
 	scanf("%s", call_num);
-	printf("Áñ°Ü¸Ô´Â À½½Ä ÀÔ·Â: ");
+	printf("ì¦ê²¨ë¨¹ëŠ” ìŒì‹ ì…ë ¥: ");
 	scanf("%s", food);
-	printf("Ãë¹Ì ÀÔ·Â: ");
+	printf("ì·¨ë¯¸ ì…ë ¥: ");
 	scanf("%s", hobby);
-	fputs("#ÀÌ¸§: ", story);
+	fputs("#ì´ë¦„: ", story);
 	fputs(name, story);
-	fputs("\n#ÁÖ¹Î¹øÈ£: ", story);
+	fputs("\n#ì£¼ë¯¼ë²ˆí˜¸: ", story);
 	fputs(id, story);
-	fputs("\n#ÀüÈ­¹øÈ£: ", story);
+	fputs("\n#ì „í™”ë²ˆí˜¸: ", story);
 	fputs(call_num, story);
-	fputs("\n#Áñ°Ü¸Ô´Â À½½Ä: ", story);
+	fputs("\n#ì¦ê²¨ë¨¹ëŠ” ìŒì‹: ", story);
 	fputs(food, story);
-	fputs("\n#Ãë¹Ì: ", story);
+	fputs("\n#ì·¨ë¯¸: ", story);
 	fputs(hobby, story);
 	fclose(story);
 	return 0;
