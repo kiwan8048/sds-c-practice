@@ -1,8 +1,9 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 int main(void)
 {
-	FILE* wsrc = fopen("src.txt", "wt"); // ¾²±â ¸ğµå·Î ÆÄÀÏ »ı¼º
+	FILE* wsrc = fopen("src.txt", "wt"); // ì“°ê¸° ëª¨ë“œë¡œ íŒŒì¼ ìƒì„±
 	int ch;
 	fputc('A', wsrc);
 	fputs("MY name is Kwon! \n", wsrc);
@@ -11,7 +12,7 @@ int main(void)
 	FILE* des = fopen("des.txt", "wt");
 	if (src == NULL || des == NULL)
 	{
-		printf("ÆÄÀÏ¿ÀÇÂ ½ÇÆĞ!");
+		printf("íŒŒì¼ì˜¤í”ˆ ì‹¤íŒ¨!");
 		return -1;
 	}
 	while ((ch = fgetc(src)) != EOF)
@@ -20,10 +21,10 @@ int main(void)
 	}
 	if (feof(src) != 0)
 	{
-		puts("ÆÄÀÏº¹»ç ¿Ï·á!");
+		puts("íŒŒì¼ë³µì‚¬ ì™„ë£Œ!");
 	}
 	else
-		puts("ÆÄÀÏº¹»ç ½ÇÆĞ!");
+		puts("íŒŒì¼ë³µì‚¬ ì‹¤íŒ¨!");
 	fclose(src);
 	fclose(des);
 	return 0;
