@@ -1,3 +1,4 @@
+// 이 코드는 교재의 내용을 참고하였습니다
 #include <stdio.h>
 
 int main(void)
@@ -5,7 +6,7 @@ int main(void)
 	FILE* fp = fopen("simple.txt", "wt");
 	if (fp == NULL)
 	{
-		puts("���� ���� ����!");
+		puts("ÆÄÀÏ ¿ÀÇÂ ½ÇÆÐ!");
 		return -1;
 	}
 	fputc('A', fp);
