@@ -1,3 +1,4 @@
+// 이 코드는 교재의 내용을 참고하였습니다
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
@@ -14,7 +15,7 @@ int main(void)
 	Friend myfren1;
 	Friend myfren2;
 	fp = fopen("friend.bin", "wb");
-	printf("�̸�, ����, ���� �� �Է�: ");
+	printf("ÀÌ¸§, ¼ºº°, ³ªÀÌ ¼ø ÀÔ·Â: ");
 	scanf("%s %c %d", myfren1.name, &myfren1.sex, &myfren1.age);
 	fwrite(&myfren1, sizeof(myfren1), 1, fp);
 	fclose(fp);
