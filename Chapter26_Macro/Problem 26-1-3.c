@@ -1,3 +1,4 @@
+// Л²╢ Л╫■К⌠°К┼■ Й╣░Л·╛Л²≤ К┌╢Л ╘Л²└ Л╟╦ЙЁ═М∙≤Л≤─Л┼╣К▀┬К▀╓
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #define MAX(A, B) ((A) >= (B) ? (A) : (B))
@@ -5,8 +6,8 @@
 int main(void)
 {
 	double A, B;
-	printf("╣н ╟Ёюг ╪Ж ют╥б: ");
+	printf("К▒░ Й╟°Л²≤ Л┬≤ Л·┘К═╔: ");
 	scanf("%lf %lf", &A, &B);
-	printf("%g╟║ ╢У е╚ ╪Ж ют╢о╢ы \n", MAX(A, B));
+	printf("%gЙ╟─ К█■ М│╟ Л┬≤ Л·┘К▀┬К▀╓ \n", MAX(A, B));
 	return 0;
 }
