@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #define ADD 1
@@ -6,12 +7,12 @@
 int main(void)
 {
 	int num1, num2;
-	printf("µÎ °³ÀÇ Á¤¼ö ÀÔ·Â: ");
+	printf("ë‘ ê°œì˜ ì •ìˆ˜ ì…ë ¥: ");
 	scanf("%d %d", &num1, &num2);
-#if ADD // Add°¡ ÂüÀÌ¸é
+#if ADD // Addê°€ ì°¸ì´ë©´
 	printf("%d + %d = %d \n", num1, num2, num1 + num2);
 #endif
-#if MIN // MINÀÌ ÂüÀÌ¸é
+#if MIN // MINì´ ì°¸ì´ë©´
 	printf("%d - %d = %d \n", num1, num2, num1 - num2);
 #endif
 	return 0;
