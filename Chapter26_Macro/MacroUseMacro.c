@@ -1,3 +1,4 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 
 #define PI 3.14
@@ -7,6 +8,6 @@
 int main(voidd)
 {
 	double rad = 2.1;
-	printf("¹İÁö¸§ÀÌ %gÀÎ ¿øÀÇ ³ĞÀÌ: %g \n", rad, CIRCLE_AREA(rad));
+	printf("Å¡ÃÃÃ¶Â¸Â§Å”Äš %gÅ”Ã Å¼Å™Å”Ã‡ Å‚ÄÅ”Äš: %g \n", rad, CIRCLE_AREA(rad));
 	return 0;
 }
