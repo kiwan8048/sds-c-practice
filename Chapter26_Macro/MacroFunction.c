@@ -1,5 +1,6 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
-#define SQUARE(X) X*X // Àß¸øµÈ ¸ÅÅ©·Î Á¤ÀÇ
+#define SQUARE(X) X*X // ì˜ëª»ëœ ë§¤í¬ë¡œ ì •ì˜
 
 int main(void)
 {
@@ -8,6 +9,6 @@ int main(void)
 	printf("Square of -5: %d \n", SQUARE(-5));
 	printf("Square of 2.5: %g \n", SQUARE(2.5));
 
-	printf("Square of 3+2: %d \n", SQUARE(3 + 2)); // 3+2*3+2 = 11·Î »çÄ¢¿¬»ê¿¡ ÀÇÇØ ÀÇµµÇÏÁö ¾ÊÀº °è»êÀÌ ¹ß»ıÇÔ
+	printf("Square of 3+2: %d \n", SQUARE(3 + 2)); // 3+2*3+2 = 11ë¡œ ì‚¬ì¹™ì—°ì‚°ì— ì˜í•´ ì˜ë„í•˜ì§€ ì•Šì€ ê³„ì‚°ì´ ë°œìƒí•¨
 	return 0;
 }
