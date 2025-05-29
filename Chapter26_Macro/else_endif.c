@@ -1,12 +1,13 @@
+// ì´ ì½”ë“œëŠ” êµì¬ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŠµë‹ˆë‹¤
 #include <stdio.h>
 #define HIT_NUM 5
 
 int main(void)
 {
 #if HIT_NUM==5
-	puts("¸ÅÅ©·Î »ó¼ö HIT_NUMÀº ÇöÀç 5ÀÔ´Ï´Ù.");
-#else // else ÀÌ¿ë
-	puts("¸ÅÅ©·Î »ó¼ö HIT_NUMÀº ÇöÀç 5°¡ ¾Æ´Õ´Ï´Ù.");
+	puts("ë§¤í¬ë¡œ ìƒìˆ˜ HIT_NUMì€ í˜„ì¬ 5ì…ë‹ˆë‹¤.");
+#else // else ì´ìš©
+	puts("ë§¤í¬ë¡œ ìƒìˆ˜ HIT_NUMì€ í˜„ì¬ 5ê°€ ì•„ë‹™ë‹ˆë‹¤.");
 #endif
 	return 0;
 }
