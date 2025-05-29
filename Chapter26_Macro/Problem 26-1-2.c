@@ -1,3 +1,4 @@
+// 이 코드는 교재의 내용을 참고하였습니다
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #define PI 3.1415
@@ -6,8 +7,8 @@
 int main(void)
 {
 	double rad;
-	printf("������ �Է�: ");
+	printf("šÝÁö¸§ ŔÔˇÂ: ");
 	scanf("%lf", &rad);
-	printf("����: %f", Area(rad));
+	printf("łĐŔĚ: %f", Area(rad));
 	return 0;
 }
