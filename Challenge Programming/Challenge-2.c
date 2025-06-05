@@ -17,24 +17,24 @@ int main(void)
 	{
 		input[i] = malloc(sizeof(Book));
 	}
-	printf("µµ¼­ Á¤º¸ ÀÔ·Â\n");
+	printf("ë„ì„œ ì •ë³´ ì…ë ¥\n");
 	for (i = 0; i < 3; i++)
 	{
-		printf("ÀúÀÚ: ");
+		printf("ì €ì: ");
 		fgets(input[i]->author, sizeof(input[i]->author), stdin);
-		printf("Á¦¸ñ: ");
+		printf("ì œëª©: ");
 		fgets(input[i]->title, sizeof(input[i]->title), stdin);
-		printf("ÆäÀÌÁö ¼ö: ");
+		printf("í˜ì´ì§€ ìˆ˜: ");
 		scanf("%d", &input[i]->page);
 		getchar();
 	}
-	printf("\nµµ¼­ Á¤º¸ Ãâ·Â\n");
+	printf("\në„ì„œ ì •ë³´ ì¶œë ¥\n");
 	for (i = 0; i < 3; i++)
 	{
 		printf("\nbook %d\n", i + 1);
-		printf("ÀúÀÚ: %s", input[i]->author);
-		printf("Á¦¸ñ: %s", input[i]->title);
-		printf("ÆäÀÌÁö ¼ö: %d", input[i]->page);
+		printf("ì €ì: %s", input[i]->author);
+		printf("ì œëª©: %s", input[i]->title);
+		printf("í˜ì´ì§€ ìˆ˜: %d", input[i]->page);
 	}
 	for (i = 0; i < 3; i++)
 	{
